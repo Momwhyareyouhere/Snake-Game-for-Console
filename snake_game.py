@@ -7,6 +7,7 @@ class SnakeGame:
         self.master.title("Snake Game")
         self.canvas = tk.Canvas(self.master, width=400, height=400, bg="black")
         self.canvas.pack()
+        self.canvas.focus_set()
         self.master.bind("<KeyPress>", self.key_pressed)
 
         self.snake = [[100, 100], [90, 100], [80, 100]]
