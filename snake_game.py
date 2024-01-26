@@ -7,8 +7,16 @@ class SnakeGame:
         self.master.title("Snake Game")
         self.canvas = tk.Canvas(self.master, width=400, height=400, bg="black")
         self.canvas.pack()
-        self.canvas.focus_set()
-        self.master.bind("<KeyPress>", self.key_pressed)
+        self.canvas.focus_set() 
+
+        self.canvas.bind("<Up>", lambda event: self.key_pressed(event, "Up"))
+        self.canvas.bind("<Down>", lambda event: self.key_pressed(event, "Down"))
+        self.canvas.bind("<Left>", lambda event: self.key_pressed(event, "Left"))
+        self.canvas.bind("<Right>", lambda event: self.key_pressed(event, "Right"))
+        self.canvas.bind("w", lambda event: self.key_pressed(event, "Up"))
+        self.canvas.bind("s", lambda event: self.key_pressed(event, "Down"))
+        self.canvas.bind("a", lambda event: self.key_pressed(event, "Left"))
+        self.canvas.bind("d", lambda event: self.key_pressed(event, "Right"))
 
         self.snake = [[100, 100], [90, 100], [80, 100]]
         self.food = self.create_food()
@@ -40,7 +48,6 @@ class SnakeGame:
             file.write(str(self.high_score))
 
     def create_food(self):
-        # Delete existing food items
         self.canvas.delete("food")
 
         x = random.randint(1, 19) * 20
@@ -77,15 +84,14 @@ class SnakeGame:
         else:
             self.master.after(100, self.move_snake)
 
-    def key_pressed(self, event):
-        key = event.keysym
+    def key_pressed(self, event, direction):
         if (
-            (key in {"Up", "W"} and not self.direction == "Down") or
-            (key in {"Down", "S"} and not self.direction == "Up") or
-            (key in {"Left", "A"} and not self.direction == "Right") or
-            (key in {"Right", "D"} and not self.direction == "Left")
+            (direction == "Up" and not self.direction == "Down") or
+            (direction == "Down" and not self.direction == "Up") or
+            (direction == "Left" and not self.direction == "Right") or
+            (direction == "Right" and not self.direction == "Left")
         ):
-            self.direction = key
+            self.direction = direction
 
     def update_score(self):
         self.score_label.config(text=f"Score: {self.score}")
@@ -112,4 +118,3 @@ if __name__ == "__main__":
     root = tk.Tk()
     game = SnakeGame(root)
     root.mainloop()
-
