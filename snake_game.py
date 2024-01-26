@@ -77,12 +77,15 @@ class SnakeGame:
             self.master.after(100, self.move_snake)
 
     def key_pressed(self, event):
-        key = event.keysym
-        if (key == "Up" and not self.direction == "Down" or
-                key == "Down" and not self.direction == "Up" or
-                key == "Left" and not self.direction == "Right" or
-                key == "Right" and not self.direction == "Left"):
-            self.direction = key
+    key = event.keysym
+    if (
+        (key in {"Up", "W"} and not self.direction == "Down") or
+        (key in {"Down", "S"} and not self.direction == "Up") or
+        (key in {"Left", "A"} and not self.direction == "Right") or
+        (key in {"Right", "D"} and not self.direction == "Left")
+    ):
+        self.direction = key
+
 
     def update_score(self):
         self.score_label.config(text=f"Score: {self.score}")
