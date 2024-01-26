@@ -13,9 +13,15 @@ Enjoy the game!
 - - curses (Included with Python)
 
 ### Create a Virtual Environment (Optional but recommended)
+On Linux/Mac:
 ```bash
 python3 -m venv venv
 ```
+On Windows:
+```bash
+python -m venv venv
+```
+
 ### Activate the Virtual Environment
 On Windows (PowerShell):
 ```bash
