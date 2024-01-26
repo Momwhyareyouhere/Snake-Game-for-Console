@@ -24,13 +24,14 @@ source venv/bin/activate
 ```
 
 
-## Install Packages
-```bash
-pip install -r requirements.txt
-```
-
 ### Clone the Repository
 
 ```bash
 git clone https://github.com/Momwhyareyouhere/Snake-Game-for-Console.git
 cd Snake-Game-for-Console
+```
+
+### Install Packages
+```bash
+pip install -r requirements.txt
+```
