@@ -8,6 +8,27 @@ A simple Snake Game implemented in Python for the console.
 
 - Python 3.x
 
+### Create a Virtual Environment (Optional but recommended)
+```bash
+python3 -m venv venv
+```
+### Activate the Virtual Environment
+On Windows (PowerShell):
+```bash
+.\venv\Scripts\Activate
+```
+
+On Linux/Mac:
+```bash
+source venv/bin/activate
+```
+
+
+## Install Packages
+```bash
+pip install -r requirements.txt
+```
+
 ### Clone the Repository
 
 ```bash
