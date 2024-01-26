@@ -1,6 +1,6 @@
-# Snake Game
+# Snake Game for Console
 
-A simple Snake Game implemented in Python using Tkinter.
+A simple Snake Game implemented in Python for the console.
 
 ## Installation
 
@@ -11,5 +11,5 @@ A simple Snake Game implemented in Python using Tkinter.
 ### Clone the Repository
 
 ```bash
-git https://github.com/Momwhyareyouhere/Snake-Game-for-Console.git
+git clone https://github.com/Momwhyareyouhere/Snake-Game-for-Console.git
 cd Snake-Game-for-Console
