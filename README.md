@@ -10,7 +10,7 @@ Enjoy the game!
 ### Requirements
 
 - Python 3.x
-- - curses (Included with Python)
+- curses (Included with Python)
 
 ### Create a Virtual Environment (Optional but recommended)
 On Linux/Mac:
