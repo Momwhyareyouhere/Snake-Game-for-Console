@@ -1,1 +1,2 @@
-curses
+curses==2.2.1
+requests==2.26.0
