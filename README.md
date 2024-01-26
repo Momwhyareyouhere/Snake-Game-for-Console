@@ -11,5 +11,5 @@ A simple Snake Game implemented in Python using Tkinter.
 ### Clone the Repository
 
 ```bash
-git 
+git https://github.com/Momwhyareyouhere/Snake-Game-for-Console.git
 cd Snake-Game-for-Console
