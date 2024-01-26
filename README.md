@@ -2,7 +2,10 @@
 
 A simple Snake Game implemented in Python for the console.
 
-## Installation
+### How to Play
+Use arrow keys (w, a, s, d) to control the snake.
+Navigate and eat the food (F) to grow and increase your score.
+Enjoy the game!
 
 ### Requirements
 
@@ -35,3 +38,21 @@ cd Snake-Game-for-Console
 ```bash
 pip install -r requirements.txt
 ```
+
+
+### Run the Game
+On Windows:
+```bash
+python.exe snake_game.py
+```
+
+On Mac OS/Linux:
+```bash
+python snake_game.py
+```
+
+### Deactivate the Virtual Environment
+```bash
+deactivate
+```
+
