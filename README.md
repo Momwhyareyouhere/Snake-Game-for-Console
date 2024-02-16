@@ -43,7 +43,7 @@ cd Snake-Game-for-Console
 
 ### Install Package
 
-
+Linux:
 ```bash
 sudo apt-get install libncurses5-dev libncursesw5-dev
 ```
