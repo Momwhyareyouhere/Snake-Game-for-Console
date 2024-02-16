@@ -43,6 +43,8 @@ cd Snake-Game-for-Console
 
 ### Install Package
 
+# Curses:
+
 Linux:
 ```bash
 sudo apt-get install libncurses5-dev libncursesw5-dev
@@ -65,6 +67,21 @@ python.exe snake_game.py
 On Mac OS/Linux:
 ```bash
 python snake_game.py
+```
+# Install Tkinter (if not already installed)
+
+Linux:
+```bash
+sudo apt-get install python3-tk
+```
+Mac OS:
+```bash
+brew install python-tk
+```
+
+Windows:
+```bash
+pip install tk
 ```
 
 ### Deactivate the Virtual Environment
