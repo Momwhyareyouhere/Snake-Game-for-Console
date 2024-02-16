@@ -43,7 +43,7 @@ cd Snake-Game-for-Console
 
 ### Install Package
 
-# Curses:
+## Curses:
 
 Linux:
 ```bash
@@ -68,7 +68,7 @@ On Mac OS/Linux:
 ```bash
 python snake_game.py
 ```
-# Install Tkinter (if not already installed)
+## Install Tkinter (if not already installed)
 
 Linux:
 ```bash
