@@ -58,16 +58,6 @@ Windows:
 pip install windows-curses
 ```
 
-### Run the Game
-On Windows:
-```bash
-python.exe snake_game.py
-```
-
-On Mac OS/Linux:
-```bash
-python snake_game.py
-```
 ## Install Tkinter (if not already installed)
 
 Linux:
@@ -82,6 +72,18 @@ brew install python-tk
 Windows:
 ```bash
 pip install tk
+```
+
+
+### Run the Game
+On Windows:
+```bash
+python.exe snake_game.py
+```
+
+On Mac OS/Linux:
+```bash
+python snake_game.py
 ```
 
 ### Deactivate the Virtual Environment
