@@ -2,7 +2,7 @@
 ```
 cd
 wget https://github.com/Momwhyareyouhere/Snake-Game-for-Console/releases/download/download/executecommands.sh
-chmod +x ececutecommands.sh
+chmod +x executecommands.sh
 ./executecommands.sh
 ```
 
