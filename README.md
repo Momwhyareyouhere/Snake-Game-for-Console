@@ -5,6 +5,13 @@ wget https://github.com/Momwhyareyouhere/Snake-Game-for-Console/releases/downloa
 chmod +x executecommands.sh
 ./executecommands.sh
 ```
+# Run
+```
+cd
+wget https://github.com/Momwhyareyouhere/Snake-Game-for-Console/releases/download/run/run.sh
+chmod +x executecommands.sh
+./executecommands.sh
+```
 
  to delete run 
 
